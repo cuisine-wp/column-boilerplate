@@ -17,7 +17,7 @@
 //after that the bus pretty much drives itself.
 namespace BoilerplateColumn;
 
-use Cuisine\Wrappers\Scripts;
+use Cuisine\Wrappers\Script;
 use Cuisine\Wrappers\Sass;
 use Cuisine\Utilities\Url;
 
@@ -116,7 +116,7 @@ class ColumnIgniter{
 			//javascript files for front-end use:
 			
 			//$url = Url::plugin( 'chef-default-column', true ).'Assets/js/';
-			//Scripts::register( 'column-script', $url.'script', false );
+			//Script::register( 'column-script', $url.'script', false );
 			
 
 			//sass files for front-end use:
