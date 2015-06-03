@@ -51,18 +51,6 @@ class ColumnIgniter{
 
 
 	/**
-	 * Init the \BoilerplateColumn\ColumnIgniter Class
-	 *
-	 * @return \BoilerplateColumn\ColumnIgniter
-	 */
-	public static function getInstance(){
-		
-	    return static::$instance = new static();
-
-	}
-
-
-	/**
 	 * Register this column-type with Chef Sections
 	 * 
 	 * @return void
@@ -127,6 +115,21 @@ class ColumnIgniter{
 		});
 	}
 
+	/*=============================================================*/
+	/**             Getters & Setters                              */
+	/*=============================================================*/
+
+
+	/**
+	 * Init the \BoilerplateColumn\ColumnIgniter Class
+	 *
+	 * @return \BoilerplateColumn\ColumnIgniter
+	 */
+	public static function getInstance(){
+		
+	    return static::$instance = new static();
+
+	}
 
 
 }
