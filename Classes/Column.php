@@ -53,6 +53,25 @@
 		/**             Backend                                        */
 		/*=============================================================*/
 	
+		/**
+		 * Overwrite the save function for this column
+		 * 
+		 * @return bool
+		 */
+		public function saveProperties(){
+
+			$props = $_POST['properties'];
+
+			$saved = update_post_meta( 
+				$this->post_id, 
+				'_column_props_'.$this->fullId, 
+				$props
+			);
+
+			//set the new properties in this class
+			$this->properties = $props;
+			return $saved;
+		}
 	
 		/**
 		 * Create the preview for this column
