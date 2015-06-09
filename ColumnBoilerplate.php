@@ -83,7 +83,7 @@ class ColumnIgniter{
 	private function load(){
 
 		//only if Chef Sections is loaded as well:
-		add_action( 'chef_sections_loaded', function(){
+		add_action( 'init', function(){
 
 			include( 'Classes/Column.php' );
 

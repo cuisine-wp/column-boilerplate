@@ -138,6 +138,7 @@
 						'defaultValue'	=> $this->getField( 'title' ),
 					)
 				)
+				
 			);
 	
 			return $fields;
