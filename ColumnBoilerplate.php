@@ -3,7 +3,7 @@
  * Plugin Name: Chef Boilerplate Column
  * Plugin URI: http://chefduweb.nl/plugins/column-boilerplate
  * Description: Default Column started kit
- * Version: 1.0
+ * Version: 1.1
  * Author: Luc Princen
  * Author URI: http://www.chefduweb.nl/
  * License: GPLv2
@@ -82,12 +82,7 @@ class ColumnIgniter{
 	 */
 	private function load(){
 
-		//only if Chef Sections is loaded as well:
-		add_action( 'init', function(){
-
-			include( 'Classes/Column.php' );
-
-		});
+		include( 'Classes/Column.php' );
 
 	}
 
@@ -135,7 +130,7 @@ class ColumnIgniter{
 }
 
 
-add_action('cuisine_loaded', function(){
+add_action('chef_sections_loaded', function(){
 
 	\BoilerplateColumn\ColumnIgniter::getInstance();
 
